@@ -9,14 +9,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<Create/>}></Route>
-        
-        {/* <Route path="/login" element={<Login />} /> */}
-        {/* <Route path="/admin" element={<Admin />}>
-          <Route path="/admin" element={<AdminProducts />} />
-          <Route path="/admin/orders" element={<AdminOrders />} />
-        </Route> */}
+        <Route path="/create/:taskId" element={<Create/>}></Route>
       </Routes>
-      
     </>
     
   )
