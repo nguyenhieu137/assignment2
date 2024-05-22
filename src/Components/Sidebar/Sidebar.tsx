@@ -59,9 +59,14 @@ const Sidebar: React.FC = () => {
             <Link to='/' className='title'>
               <MdTask className='task-ic' />Today Task
             </Link>
-            <div className="filter-work">
+            <div className="filter-task">
               {categories.map((category, index) => (
-                  <p key={index} style={{ color: category.color }}>{category.name}</p>
+                  
+                  <div className="filter-item">
+                      <p key={index} style={{ color: category.color }}>{category.name}</p>
+                      <button key={index} className="delete-btn">Delete</button>
+                  </div>
+                  
               ))}
             </div>
             <div className='add-filter'>
